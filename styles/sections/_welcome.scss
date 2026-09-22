@@ -1,0 +1,73 @@
+.welcome {
+    height: 640px;
+
+    .main-content {
+
+        .texts {
+            background-color: $primaryColor;
+
+
+            .hot-recipes {
+                width: fit-content;
+
+                p {
+                    @include text($weight: 600);
+                    letter-spacing: -2%;
+                }
+            }
+
+            h1 {
+                @include text($weight: 600, $size: 64px);
+                letter-spacing: -4%;
+            }
+
+            .lorem {
+                @include text($opacity: 0.6, $size: 16px);
+            }
+
+            .no-padding {
+                button {
+                    padding: 8px 14px;
+                }
+            }
+
+            .last-buttons {
+                height: 50px;
+
+                button {
+                    &:first-child {
+                        img {
+                            height: 50px;
+                        }
+
+                        h4 {
+                            @include text($size: 16px, $weight: 700);
+                            letter-spacing: -2%;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+        }
+
+        #thumbisup {
+            left: 50%;
+            top: 8%;
+            transform: translateX(-50%);
+        }
+
+        div img {
+            right: -50px;
+        }
+    }
+
+    .aside {
+        width: 40px;
+        height: 600px;
+        background-color: $primaryColor;
+    }
+}

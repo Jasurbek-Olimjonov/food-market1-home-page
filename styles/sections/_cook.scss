@@ -1,0 +1,27 @@
+.cook {
+    height: 597px;
+
+    .texts {
+        h1 {
+            @include text($size: 48px, $weight: 600);
+            letter-spacing: -4%;
+        }
+
+        p {
+            @include text($size: 16px, $opacity: 0.6);
+        }
+
+        button {
+            width: fit-content;
+            font-size: 14px;
+        }
+    }
+
+    .cook-showcase {
+        background: linear-gradient(to top, $primaryColor, white);
+
+        img {
+            width: 110%;
+        }
+    }
+}

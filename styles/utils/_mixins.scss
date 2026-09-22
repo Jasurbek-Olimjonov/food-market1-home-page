@@ -1,0 +1,29 @@
+@mixin flex($gap: 0, $type: row, $justify: normal, $align: normal) {
+    display: flex;
+    gap: $gap;
+    flex-direction: $type;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin text($color: black, $size: normal, $weight: 400, $opacity: 1) {
+    color: $color;
+    opacity: $opacity;
+
+    font: {
+        size: $size;
+        weight: $weight;
+    }
+}
+
+@mixin border {
+    border: none;
+    box-shadow: $primaryBorder;
+}
+
+@mixin hr {
+    content: "";
+    height: 0;
+    @include border;
+    width: 100%;
+}
